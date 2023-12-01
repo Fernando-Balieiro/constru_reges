@@ -18,7 +18,6 @@ import javax.swing.JPanel;
  * @author doniz
  */
 public class JanelaPrincipal extends javax.swing.JFrame {
-    private BufferedImage imagemDeFundo;
     /**
      * Creates new form JanelaPrincipal
      */
@@ -50,7 +49,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         JMenuCadastro = new javax.swing.JMenu();
         Usuario = new javax.swing.JMenuItem();
         Livros = new javax.swing.JMenuItem();
-        Emprestimo = new javax.swing.JMenuItem();
         exit = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -138,14 +136,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         });
         JMenuCadastro.add(Livros);
 
-        Emprestimo.setText("Solicitar emprestimo");
-        Emprestimo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EmprestimoActionPerformed(evt);
-            }
-        });
-        JMenuCadastro.add(Emprestimo);
-
         jMenuBar1.add(JMenuCadastro);
 
         exit.setText("Sair");
@@ -178,12 +168,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         frmLivro.setVisible(true);
     }//GEN-LAST:event_LivrosActionPerformed
 
-    private void EmprestimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmprestimoActionPerformed
-        FrmEmprestimo frmEmprestimo = new FrmEmprestimo();
-        desktopPanel.add(frmEmprestimo);
-        frmEmprestimo.setVisible(true);
-    }//GEN-LAST:event_EmprestimoActionPerformed
-
     private void UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuarioActionPerformed
        FrmAluno frmAluno = new FrmAluno();
         desktopPanel.add(frmAluno);
@@ -200,13 +184,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         int verifyAluno = aluno.verificarPorEmailESenha(txtEmail.getText(), txtSenha.getText());
         System.out.println(verifyAluno);
         
-        if(verifyAluno != 0){
-            FrmEmprestimo frmEmprestimo = new FrmEmprestimo();
-            desktopPanel.add(frmEmprestimo);
-            frmEmprestimo.setVisible(true);
-        } else{
-             JOptionPane.showMessageDialog(null, "Aluno não encontrado no sistema!", "Atenção", JOptionPane.WARNING_MESSAGE);
-        };
     }//GEN-LAST:event_jLabel4ActionPerformed
 
     private void ButtonEmp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEmp1ActionPerformed
@@ -221,7 +198,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonEmp1;
-    private javax.swing.JMenuItem Emprestimo;
     private javax.swing.JMenu JMenuCadastro;
     private javax.swing.JMenuItem Livros;
     private javax.swing.JMenuItem Usuario;

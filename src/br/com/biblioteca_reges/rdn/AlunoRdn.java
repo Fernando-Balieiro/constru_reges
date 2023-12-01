@@ -24,8 +24,8 @@ public class AlunoRdn {
             int linhasAfetadas = 0;
             StringBuilder str = new StringBuilder();
 
-            str.append("INSERT INTO aluno    ");
-            str.append("(alunoRa               ");
+            str.append("INSERT INTO cliente    ");
+            str.append("(clienteRa               ");
             str.append(",nomeCompleto           ");
             str.append(",senha                  ");
             str.append(",email                  ");
