@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:latest
+    command: --innodb-use-native-aio=0
+    container_name: db
+    restart: always
+    tty: true
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+    environment:
+      - MYSQL_DATABASE=nodeDb
+      - MYSQL_ROOT_PASSWORD=root
+
+    networks:
+      - node-network
+
+    ports:
+      - "3306:3306"
+
