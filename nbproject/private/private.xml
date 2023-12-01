@@ -4,9 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/JanelaPrincipal.java</file>
-            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/FrmLivro.java</file>
-            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/FrmAluno.java</file>
-            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/FrmEmprestimo.java</file>
+            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/FrmMateriais.java</file>
+            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/Principal.java</file>
+            <file>file:/home/fernando/Projetos/constru_reges/src/br/com/biblioteca_reges/views/FrmCliente.java</file>
         </group>
     </open-files>
 </project-private>

@@ -20,15 +20,15 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Alex
  */
-public class FrmAluno extends javax.swing.JInternalFrame {
+public class FrmCliente extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form FrmAluno
+     * Creates new form FrmCliente
      */
     int id = 0;
     boolean modoAlterarDeletar = false;
 
-    public FrmAluno() {
+    public FrmCliente() {
         initComponents();
         this.habilitarCampos(false);
 
@@ -88,8 +88,8 @@ public class FrmAluno extends javax.swing.JInternalFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
         getContentPane().add(txtDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 147, -1));
 
-        jLabel3.setText("Ra");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, -1, -1));
+        jLabel3.setText("Idade");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
 
         jLabel4.setText("Senha");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, 20));

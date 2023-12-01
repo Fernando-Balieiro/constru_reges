@@ -41,10 +41,11 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         txtEmail = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4ttt = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         ButtonEmp1 = new javax.swing.JButton();
+        jLabel4ttt1 = new javax.swing.JLabel();
+        jLabel4ttt2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         JMenuCadastro = new javax.swing.JMenu();
         Usuario = new javax.swing.JMenuItem();
@@ -64,7 +65,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                 jLabel4ActionPerformed(evt);
             }
         });
-        jInternalFrame1.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, -1, -1));
+        jInternalFrame1.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, -1));
         jInternalFrame1.getContentPane().add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 160, 213, -1));
         jInternalFrame1.getContentPane().add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 110, 213, -1));
 
@@ -73,16 +74,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jLabel3.setText("Senha");
         jInternalFrame1.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 138, -1, -1));
-
-        jLabel4ttt.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        jLabel4ttt.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel4ttt.setText("Cadastre-se");
-        jLabel4ttt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4tttMouseClicked(evt);
-            }
-        });
-        jInternalFrame1.getContentPane().add(jLabel4ttt, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setText("Bem vindo à ConstruReges");
@@ -99,6 +90,26 @@ public class JanelaPrincipal extends javax.swing.JFrame {
             }
         });
         jInternalFrame1.getContentPane().add(ButtonEmp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, -1, -1));
+
+        jLabel4ttt1.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        jLabel4ttt1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4ttt1.setText("Cadastro");
+        jLabel4ttt1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4ttt1MouseClicked(evt);
+            }
+        });
+        jInternalFrame1.getContentPane().add(jLabel4ttt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, 30));
+
+        jLabel4ttt2.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        jLabel4ttt2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4ttt2.setText("Cadastro");
+        jLabel4ttt2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4ttt2MouseClicked(evt);
+            }
+        });
+        jInternalFrame1.getContentPane().add(jLabel4ttt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, 30));
 
         desktopPanel.setLayer(jInternalFrame1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -128,7 +139,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         });
         JMenuCadastro.add(Usuario);
 
-        Livros.setText("Livros");
+        Livros.setText("Materiais");
         Livros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LivrosActionPerformed(evt);
@@ -162,14 +173,8 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void LivrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LivrosActionPerformed
-       FrmLivro frmLivro = new FrmLivro();
-        desktopPanel.add(frmLivro);
-        frmLivro.setVisible(true);
-    }//GEN-LAST:event_LivrosActionPerformed
-
     private void UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuarioActionPerformed
-       FrmAluno frmAluno = new FrmAluno();
+       FrmCliente frmAluno = new FrmCliente();
         desktopPanel.add(frmAluno);
         frmAluno.setVisible(true);
     }//GEN-LAST:event_UsuarioActionPerformed
@@ -190,11 +195,19 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ButtonEmp1ActionPerformed
 
-    private void jLabel4tttMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4tttMouseClicked
-        FrmAluno frmAluno = new FrmAluno();
-        desktopPanel.add(frmAluno);
-        frmAluno.setVisible(true);
-    }//GEN-LAST:event_jLabel4tttMouseClicked
+    private void jLabel4ttt1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4ttt1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel4ttt1MouseClicked
+
+    private void jLabel4ttt2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4ttt2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel4ttt2MouseClicked
+
+    private void LivrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LivrosActionPerformed
+        FrmMateriais frmLivro = new FrmMateriais();
+        desktopPanel.add(frmLivro);
+        frmLivro.setVisible(true);
+    }//GEN-LAST:event_LivrosActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonEmp1;
@@ -208,7 +221,8 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JButton jLabel4;
-    private javax.swing.JLabel jLabel4ttt;
+    private javax.swing.JLabel jLabel4ttt1;
+    private javax.swing.JLabel jLabel4ttt2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JTextField txtEmail;

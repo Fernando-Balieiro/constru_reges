@@ -19,12 +19,12 @@ import javax.swing.JFrame;
  *
  * @author doniz
  */
-public class FrmLivro extends javax.swing.JInternalFrame {
+public class FrmMateriais extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FrmLivro
      */
-    public FrmLivro() {
+    public FrmMateriais() {
         initComponents();
         
         ImageIcon icon = new ImageIcon("Assets/lupa.png");
@@ -71,9 +71,9 @@ public class FrmLivro extends javax.swing.JInternalFrame {
         getContentPane().add(txtLivro);
         txtLivro.setBounds(140, 80, 120, 25);
 
-        jLabel2.setText("Autor");
+        jLabel2.setText("Marca");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 122, 36, 19);
+        jLabel2.setBounds(50, 122, 50, 19);
         getContentPane().add(txtAutor);
         txtAutor.setBounds(50, 150, 113, 25);
 
